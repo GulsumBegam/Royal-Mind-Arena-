@@ -1,15 +1,15 @@
-import bcrypt from "bcryptjs";
+import { hash, compare } from "@node-rs/bcrypt";
 import { db } from "./db";
 import { users } from "./schema";
 import { eq } from "drizzle-orm";
 import { cookies } from "next/headers";
 
 export async function hashPassword(password: string) {
-  return bcrypt.hash(password, 12);
+  return hash(password, 12);
 }
 
-export async function verifyPassword(password: string, hash: string) {
-  return bcrypt.compare(password, hash);
+export async function verifyPassword(password: string, hashStr: string) {
+  return compare(password, hashStr);
 }
 
 export async function getUser(username: string) {
