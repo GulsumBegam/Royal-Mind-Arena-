@@ -1,15 +1,19 @@
-import { hash, compare } from "@node-rs/bcrypt";
+import crypto from "crypto";
 import { db } from "./db";
 import { users } from "./schema";
 import { eq } from "drizzle-orm";
 import { cookies } from "next/headers";
 
-export async function hashPassword(password: string) {
-  return hash(password, 12);
+export async function hashPassword(password: string): Promise<string> {
+  const salt = crypto.randomBytes(16).toString("hex");
+  const hash = crypto.pbkdf2Sync(password, salt, 1000, 64, "sha512").toString("hex");
+  return `${salt}:${hash}`;
 }
 
-export async function verifyPassword(password: string, hashStr: string) {
-  return compare(password, hashStr);
+export async function verifyPassword(password: string, stored: string): Promise<boolean> {
+  const [salt, hash] = stored.split(":");
+  const verify = crypto.pbkdf2Sync(password, salt, 1000, 64, "sha512").toString("hex");
+  return hash === verify;
 }
 
 export async function getUser(username: string) {
