@@ -24,6 +24,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ success: true, username: user.username });
   } catch (e) {
+    console.error("Register error:", e)  // 👈 add this line
     return NextResponse.json({ error: "Server error" }, { status: 500 });
   }
 }
