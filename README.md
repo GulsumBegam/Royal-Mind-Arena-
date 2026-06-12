@@ -30,7 +30,7 @@
 
 <div align="center">
 
-![Royal Mind Arena Demo](./public/screenshots/demo.gif)
+![Royal Mind Arena Demo](./demo.gif)
 
 *Full gameplay — chess board, AI moves, Selen coaching, move history*
 
@@ -50,14 +50,14 @@
     <td align="center"><b>🔑 Sign In</b></td>
   </tr>
   <tr>
-    <td><img src="./public/screenshots/register.png" width="480"/></td>
-    <td><img src="./public/screenshots/login.png" width="480"/></td>
+    <td><img src="./register.png" width="480"/></td>
+    <td><img src="./login.png" width="480"/></td>
   </tr>
   <tr>
     <td align="center" colspan="2"><b>⚠️ Invalid Login Handling</b></td>
   </tr>
   <tr>
-    <td align="center" colspan="2"><img src="./public/screenshots/login-error.png" width="480"/></td>
+    <td align="center" colspan="2"><img src="./login-error.png" width="480"/></td>
   </tr>
 </table>
 
@@ -69,16 +69,16 @@
     <td align="center"><b>🧩 Beginner Mode in Action</b></td>
   </tr>
   <tr>
-    <td><img src="./public/screenshots/game-start.png" width="480"/></td>
-    <td><img src="./public/screenshots/game-beginner.png" width="480"/></td>
+    <td><img src="./game-start.png" width="480"/></td>
+    <td><img src="./game-beginner.png" width="480"/></td>
   </tr>
   <tr>
     <td align="center"><b>🏆 Moderate Mode — Minimax at Work</b></td>
     <td align="center"><b>👑 Difficult Mode — Full Challenge</b></td>
   </tr>
   <tr>
-    <td><img src="./public/screenshots/game-moderate.png" width="480"/></td>
-    <td><img src="./public/screenshots/game-difficult.png" width="480"/></td>
+    <td><img src="./game-moderate.png" width="480"/></td>
+    <td><img src="./game-difficult.png" width="480"/></td>
   </tr>
 </table>
 
@@ -90,8 +90,8 @@
     <td align="center"><b>📋 Move History Panel</b></td>
   </tr>
   <tr>
-    <td><img src="./public/screenshots/selen-chat.png" width="480"/></td>
-    <td><img src="./public/screenshots/move-history.png" width="220"/></td>
+    <td><img src="./selen-chat.png" width="480"/></td>
+    <td><img src="./move-history.png" width="220"/></td>
   </tr>
 </table>
 
