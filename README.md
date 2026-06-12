@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Cinzel+Decorative&size=40&pause=1000&color=7C3AED&center=true&vCenter=true&width=600&lines=♛+Royal+Mind+Arena;Experience+Chess+Like+Never+Before" alt="Royal Mind Arena" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Cinzel+Decorative&size=40&pause=1000&color=7C3AED&center=true&vCenter=true&width=600&lines=♛+Royal+Mind+Arena;Chess+Like+Never+Before" alt="Royal Mind Arena" />
 
 <br/>
 
@@ -30,7 +30,7 @@
 
 <div align="center">
 
-![Royal Mind Arena Demo](./demo.gif)
+![Royal Mind Arena Demo](./demoo.gif)
 
 *Full gameplay — chess board, AI moves, Selen coaching, move history*
 
